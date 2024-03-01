@@ -9,9 +9,10 @@ YADL is a simple directory lister that can be used to list the contents of a dir
 - [Yet Another Directory Lister (YADL)](#yet-another-directory-lister-yadl)
   - [Table of Contents](#table-of-contents)
   - [Features](#features)
-  - [Screenshots](#screenshots)
   - [Installation](#installation)
     - [Note](#note)
+  - [Screenshots](#screenshots)
+  - [Online Demo](#online-demo)
   - [Customization](#customization)
   - [License](#license)
 
@@ -25,11 +26,6 @@ YADL is a simple directory lister that can be used to list the contents of a dir
 - 🌑 Dark mode
 - Many, many more! (Check out the [customization](#customization) section)
 
-## Screenshots
-
-![Dark mode](screenshots/dark.png)
-![Light mode](screenshots/light.png)
-
 ## Installation
 
 1. Download the latest `yadl.php` from the [releases page](https://github.com/JMcrafter26/ya-directory-lister/releases).
@@ -40,6 +36,23 @@ YADL is a simple directory lister that can be used to list the contents of a dir
 ### Note
 
 Please note that YADL is not a full-fledged file manager and is not intended to be used as one. It is only meant to list the contents of a directory and its subdirectories. YADL is not nearly that powerful and secure like other file managers, it was made in two days and is not intended to be used in a production environment. Use it at your own risk.
+
+## Screenshots
+
+> Click to enlarge.
+
+<div>
+<img height="120px" src="screenshots/dark.png">
+<img height="120px" src="screenshots/light.png">
+<img height="120px" src="screenshots/example2.png">
+<img height="120px" src="screenshots/example3.png">
+<img height="120px" src="screenshots/example4.png">
+<img height="120px" src="screenshots/example5.png">
+</div>
+
+## Online Demo
+
+Demo will be available soon.
 
 ## Customization
 

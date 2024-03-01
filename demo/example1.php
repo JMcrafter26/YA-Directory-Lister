@@ -16,8 +16,7 @@ $config = array(
     'path' => '/demoPath/', // (optional, if not set, the current directory will be used)
 
     'title' => 'Directory Listener',
-    // 'description' => 'Default Behaviour',
-    'description' => 'Contents of',
+    'description' => 'Default Behaviour',
     'logo' => 'https://avatars.githubusercontent.com/u/77780772?v=4',
     'footer' => '2024 &copy; JMcrafter26',
     'showReadme' => true,
