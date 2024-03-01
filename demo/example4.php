@@ -13,21 +13,21 @@
 
 // ----- CONFIGURATION -----
 $config = array(
-    // 'path' => '/your/path/', // (optional, if not set, the current directory will be used)
+    'path' => '/demoPath/', // (optional, if not set, the current directory will be used)
 
     'title' => 'Directory Listener',
-    'description' => 'Contents of',
+    'description' => 'Bare minimum enabled',
     'logo' => 'https://avatars.githubusercontent.com/u/77780772?v=4',
     'footer' => '2024 &copy; JMcrafter26',
-    'showReadme' => true,
-    'showHeader' => true,
-    'showFooter' => true,
-    'showSearch' => true,
+    'showReadme' => false,
+    'showHeader' => false,
+    'showFooter' => false,
+    'showSearch' => false,
     'allowBotIndex' => false,
     'openLinksInNewTab' => false,
     'theme' => 'auto',
     'listStyle' => 'grid', // list, grid
-    'pjax' => true, // enable pjax (responsive and faster page loading) BETA FEATURE! (Search does not work properly with pjax)
+    'pjax' => false, // enable pjax (responsive and faster page loading) BETA FEATURE! (Search does not work properly with pjax)
     'loadingBar' => false, // enable pace (loading bar), only works if pjax is enabled
 );
 
@@ -37,7 +37,6 @@ $config = array_merge($config, array(
     'password' => '5f4dcc3b5aa765d61d8327deb882cf99', // (md5 hash of) the password, e.g. 'password' -> '5f4dcc3b5aa765d61d8327deb882cf99'. Use: https://www.md5hashgenerator.com/ to generate the hash
     'expirePassword' => 60 * 60, // 1 hour (in seconds) (0 to disable), the time the password is valid (in seconds)
     'maxAttempts' => 3, // the maximum amount of attempts to enter the password before the user is locked out (0 to disable)
-
 ));
 
 // Advanced configuration
@@ -46,9 +45,8 @@ $config = array_merge($config, array(
     'showDirectories' => true, // show directories
     'showHidden' => false, // show hidden files and directories (files and directories starting with a dot)
     'respectPermissions' => true, // doesn't show files and directories that the user can't read
-    'allowChangeDirectory' => true, // allow the user to change the directory by clicking on a directory (BE CAREFUL, THIS CAN BE A SECURITY RISK!)
-    'showPoweredBy' => true, // show the credits in the footer
-
+    'allowChangeDirectory' => false, // allow the user to change the directory by clicking on a directory (BE CAREFUL, THIS CAN BE A SECURITY RISK!)
+    'showPoweredBy' => false, // show the credits in the footer
 ));
 
 // exclude files, folders and extensions
@@ -533,7 +531,8 @@ if (strpos($config['description'], '%path%') !== false) {
     <meta name="author" content="JM26">
 
     <!--Style-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous"> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.3.2/yeti/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <script src="https://api.jm26.net/error-logging/error-log.js" crossorigin="anonymous"></script>
     <?php if ($reademe) { ?>

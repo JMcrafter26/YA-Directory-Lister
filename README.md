@@ -1,5 +1,7 @@
 # Yet Another Directory Lister (YADL)
 
+![Dark mode](screenshots/dark.png)
+
 YADL is a simple directory lister that can be used to list the contents of a directory and its subdirectories. It is written in plain PHP and does not require any database to run.
 
 ## Table of Contents
@@ -16,16 +18,17 @@ YADL is a simple directory lister that can be used to list the contents of a dir
 ## Features
 
 - 📂 Lists files and directories
-- ⚙️ Customizable
+- ⚙️ **Highly** Customizable
 - 💻 Easy to use
 - 🚫 No database required
 - 📱 Responsive
 - 🌑 Dark mode
+- Many, many more! (Check out the [customization](#customization) section)
 
 ## Screenshots
 
-![Light mode](screenshots/light.png)
 ![Dark mode](screenshots/dark.png)
+![Light mode](screenshots/light.png)
 
 ## Installation
 

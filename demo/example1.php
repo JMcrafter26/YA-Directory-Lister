@@ -13,9 +13,10 @@
 
 // ----- CONFIGURATION -----
 $config = array(
-    // 'path' => '/your/path/', // (optional, if not set, the current directory will be used)
+    'path' => '/demoPath/', // (optional, if not set, the current directory will be used)
 
     'title' => 'Directory Listener',
+    // 'description' => 'Default Behaviour',
     'description' => 'Contents of',
     'logo' => 'https://avatars.githubusercontent.com/u/77780772?v=4',
     'footer' => '2024 &copy; JMcrafter26',

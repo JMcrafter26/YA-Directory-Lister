@@ -13,10 +13,10 @@
 
 // ----- CONFIGURATION -----
 $config = array(
-    // 'path' => '/your/path/', // (optional, if not set, the current directory will be used)
+    // 'path' => '/your/path/', 
 
-    'title' => 'Directory Listener',
-    'description' => 'Contents of',
+    'title' => 'Directory Listener Demo',
+    'description' => 'Select one example configuration below to see how it looks',
     'logo' => 'https://avatars.githubusercontent.com/u/77780772?v=4',
     'footer' => '2024 &copy; JMcrafter26',
     'showReadme' => true,
@@ -43,7 +43,7 @@ $config = array_merge($config, array(
 // Advanced configuration
 $config = array_merge($config, array(
     'showFiles' => true, // show files
-    'showDirectories' => true, // show directories
+    'showDirectories' => false, // show directories
     'showHidden' => false, // show hidden files and directories (files and directories starting with a dot)
     'respectPermissions' => true, // doesn't show files and directories that the user can't read
     'allowChangeDirectory' => true, // allow the user to change the directory by clicking on a directory (BE CAREFUL, THIS CAN BE A SECURITY RISK!)
@@ -57,6 +57,9 @@ $exclude = array(
         'list.php',
         '.htaccess',
         'config.php',
+        'demoPath',
+        'index.php',
+
     ),
     'directories' => array(
         'admin',
@@ -74,6 +77,7 @@ $exclude = array(
         'temp',
         'backup',
         'backups',
+        'demoPath',
     ),
     'extensions' => array(
         'log',
