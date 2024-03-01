@@ -13,10 +13,10 @@
 
 // ----- CONFIGURATION -----
 $config = array(
-    // 'path' => '/your/path/', // (optional, if not set, the current directory will be used)
+    'path' => '/demoPath/', // (optional, if not set, the current directory will be used)
 
     'title' => 'Directory Listener',
-    'description' => 'Contents of',
+    'description' => 'Allows navigation to different directories, with pjax and loading bar turned on',
     'logo' => 'https://avatars.githubusercontent.com/u/77780772?v=4',
     'footer' => '2024 &copy; JMcrafter26',
     'showReadme' => true,
@@ -28,7 +28,7 @@ $config = array(
     'theme' => 'auto',
     'listStyle' => 'grid', // list, grid
     'pjax' => true, // enable pjax (responsive and faster page loading) BETA FEATURE! (Search does not work properly with pjax)
-    'loadingBar' => false, // enable pace (loading bar), only works if pjax is enabled
+    'loadingBar' => true, // enable pace (loading bar), only works if pjax is enabled
 );
 
 // Password protection

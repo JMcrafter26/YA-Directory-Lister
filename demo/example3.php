@@ -13,31 +13,30 @@
 
 // ----- CONFIGURATION -----
 $config = array(
-    // 'path' => '/your/path/', // (optional, if not set, the current directory will be used)
+    'path' => '/demoPath/', // (optional, if not set, the current directory will be used)
 
     'title' => 'Directory Listener',
-    'description' => 'Contents of',
+    'description' => 'Password protected directory listener',
     'logo' => 'https://avatars.githubusercontent.com/u/77780772?v=4',
     'footer' => '2024 &copy; JMcrafter26',
-    'showReadme' => true,
+    'showReadme' => false,
     'showHeader' => true,
     'showFooter' => true,
     'showSearch' => true,
     'allowBotIndex' => false,
     'openLinksInNewTab' => false,
     'theme' => 'auto',
-    'listStyle' => 'grid', // list, grid
-    'pjax' => true, // enable pjax (responsive and faster page loading) BETA FEATURE! (Search does not work properly with pjax)
+    'listStyle' => 'list', // list, grid
+    'pjax' => false, // enable pjax (responsive and faster page loading) BETA FEATURE! (Search does not work properly with pjax)
     'loadingBar' => false, // enable pace (loading bar), only works if pjax is enabled
 );
 
 // Password protection
 $config = array_merge($config, array(
-    'requirePassword' => false, // require a password to access the page
+    'requirePassword' => true, // require a password to access the page
     'password' => '5f4dcc3b5aa765d61d8327deb882cf99', // (md5 hash of) the password, e.g. 'password' -> '5f4dcc3b5aa765d61d8327deb882cf99'. Use: https://www.md5hashgenerator.com/ to generate the hash
     'expirePassword' => 60 * 60, // 1 hour (in seconds) (0 to disable), the time the password is valid (in seconds)
     'maxAttempts' => 3, // the maximum amount of attempts to enter the password before the user is locked out (0 to disable)
-
 ));
 
 // Advanced configuration
@@ -46,7 +45,7 @@ $config = array_merge($config, array(
     'showDirectories' => true, // show directories
     'showHidden' => false, // show hidden files and directories (files and directories starting with a dot)
     'respectPermissions' => true, // doesn't show files and directories that the user can't read
-    'allowChangeDirectory' => true, // allow the user to change the directory by clicking on a directory (BE CAREFUL, THIS CAN BE A SECURITY RISK!)
+    'allowChangeDirectory' => false, // allow the user to change the directory by clicking on a directory (BE CAREFUL, THIS CAN BE A SECURITY RISK!)
     'showPoweredBy' => true, // show the credits in the footer
 
 ));
@@ -641,6 +640,9 @@ if (strpos($config['description'], '%path%') !== false) {
                                     <div class="d-flex justify-content-center border rounded p-3 mt-2">
                                         <form method="post">
                                             <h2>Password required</h2>
+                                            <div role="alert" class="alert alert-info">
+                                                The demo password is <code>password</code>
+                                            </div>
                                             <?php if (isset($_POST['password']) && $_POST['password'] != '') { ?>
                                                 <div class="alert alert-danger" role="alert">
                                                     The password is incorrect
