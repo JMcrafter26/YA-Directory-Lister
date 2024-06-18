@@ -4,6 +4,8 @@
 
 YADL is a simple directory lister that can be used to list the contents of a directory and its subdirectories. It is written in plain PHP and does not require any database to run.
 
+[![wakatime](https://wakatime.com/badge/github/JMcrafter26/YA-Directory-Lister.svg)](https://wakatime.com/badge/github/JMcrafter26/YA-Directory-Lister)
+
 ## Table of Contents
 
 - [Yet Another Directory Lister (YADL)](#yet-another-directory-lister-yadl)
